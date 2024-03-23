@@ -11,9 +11,19 @@
     color: #344955;
 }
 
+.logo:hover {
+    color: orange;
+    transition: all 0.5s;
+}
+
 .icon {
     font-size: 1.6rem;
     color: #344955;
+}
+
+.icon:hover {
+    color: orange;
+    transition: all 0.5s;
 }
 
 .right-side {
@@ -29,6 +39,11 @@
     border: 2px solid #eee;
     padding: 5px 12px;
     border-radius: 10px;
+}
+
+.search-input:hover {
+    color: orange;
+    border: 2px solid orange;
 }
 
 .search-input input {
