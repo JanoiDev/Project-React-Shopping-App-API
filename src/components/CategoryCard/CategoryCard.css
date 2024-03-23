@@ -1,0 +1,32 @@
+.category-card {
+    border: 2px solid #b5c0d0;
+    border-radius: 30px;
+    padding: 1.6rem;
+    width: 200px;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    background-color: black;
+    color: white;
+}
+
+.category-name {
+    color: #b5c0d0;
+    text-transform: uppercase;
+}
+
+.category-name:hover {
+    color: white;
+}
+
+/* @media (max-width:1430px) {
+    .category-card {
+        padding: 25px 10%;
+    }
+
+    .category-name {
+        padding: 5px 7%;
+        font-size: 12px;
+    }
+} */

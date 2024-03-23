@@ -1,0 +1,80 @@
+.skeleton-container {
+    position: relative;
+    width: 240px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+@keyframes overlay-wave {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.skeleton-image {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-color: #f2f0f0;
+    overflow: hidden;
+}
+
+.skeleton-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255 0),
+            rgba(255, 255, 255 1),
+            rgba(255, 255, 255 0));
+    animation: overlay-wave 2s linear infinite;
+}
+
+.skeleton-datail {
+    flex: 1;
+    padding: 10px 5px;
+}
+
+.skeleton-title {
+    width: 90%;
+    height: 20px;
+    background-color: #f2f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.skeleton-category {
+    width: 60%;
+    height: 16px;
+    background-color: #f2f0f0;
+    margin-bottom: 10px;
+}
+
+.skeleton-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skeleton-price {
+    width: 30%;
+    height: 16px;
+    background-color: #f2f0f0;
+    margin-right: 10px;
+}
+
+.skeleton-button {
+    width: 40px;
+    height: 40px;
+    background-color: #f2f0f0;
+    border-radius: 50%;
+}
